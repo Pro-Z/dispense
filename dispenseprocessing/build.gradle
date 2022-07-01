@@ -1,6 +1,12 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-group = 'com.github.Pro-Z'
+
+ext {
+    bintrayName = 'dispenseprocessing'
+    artifact = bintrayName
+    libraryName = 'sdk'
+    libraryDescription = 'A api for dispenseProcessing'
+    libraryVersion = api_version
+}
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -28,3 +34,5 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
 //    implementation "com.android.support:appcompat-v7:26.1.0"
 }
+
+apply from: "${rootProject.projectDir}/installv1.gradle"
