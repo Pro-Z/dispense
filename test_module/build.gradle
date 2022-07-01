@@ -26,7 +26,6 @@ android {
 }
 
 dependencies {
-
     // 应用
     implementation project(path: ':dispenseprocessing')
     implementation project(path: ':dispenseprocessing-annotation')
