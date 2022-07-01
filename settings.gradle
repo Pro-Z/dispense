@@ -1,0 +1,5 @@
+rootProject.name = "dispenseprocessing"
+include ':app', ':dispenseprocessing-annotation'
+include ':dispenseprocessing-compiler'
+include ':dispenseprocessing'
+include ':test_module'

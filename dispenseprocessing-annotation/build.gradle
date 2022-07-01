@@ -1,0 +1,16 @@
+apply plugin: 'java-library'
+
+ext {
+    bintrayName = 'dispenseprocessing-annotation'
+    artifact = bintrayName
+    libraryName = 'annotation'
+    libraryDescription = 'annotation used in dispenseProcessing'
+    libraryVersion = annotation_version
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
