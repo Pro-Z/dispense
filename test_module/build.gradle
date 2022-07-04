@@ -9,6 +9,13 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
+
+        // 配置Arouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
     }
 
     buildTypes {
@@ -26,10 +33,12 @@ android {
 dependencies {
 
     // 应用
-    implementation project(path: ':dispenseprocessing')
-    implementation project(path: ':dispenseprocessing-annotation')
-    annotationProcessor project(path: ':dispenseprocessing-compiler')
+//    implementation project(path: ':dispenseprocessing')
+//    implementation project(path: ':dispenseprocessing-annotation')
+//    annotationProcessor project(path: ':dispenseprocessing-compiler')
 
-
+    implementation 'com.github.Pro-Z.dispenseprocessing:dispenseprocessing-annotation:v2.0.1'
+    implementation 'com.github.Pro-Z.dispenseprocessing:dispenseprocessing:v2.0.1'
+    annotationProcessor 'com.github.Pro-Z.dispenseprocessing:dispenseprocessing-compiler:v2.0.1'
 }
 
