@@ -8,9 +8,12 @@ ext {
     libraryVersion = compiler_version
 }
 
+apply from: "${rootProject.projectDir}/installv1.gradle"
+
+
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    api project(':dispenseprocessing-annotation')
+    implementation project(':dispenseprocessing-annotation')
 }
 
 java {
@@ -18,9 +21,9 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
+
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-apply from: "${rootProject.projectDir}/installv1.gradle"
 

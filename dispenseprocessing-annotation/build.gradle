@@ -8,6 +8,9 @@ ext {
     libraryVersion = annotation_version
 }
 
+apply from: "${rootProject.projectDir}/installv1.gradle"
+
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
@@ -15,4 +18,3 @@ dependencies {
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
-apply from: "${rootProject.projectDir}/installv1.gradle"

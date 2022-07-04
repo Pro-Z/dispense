@@ -1,4 +1,4 @@
-package com.tttf.dispenseprocessing;
+package com.tttf.dispense;
 
 import android.app.Application;
 

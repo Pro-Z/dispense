@@ -1,4 +1,4 @@
-rootProject.name = "dispenseprocessing"
+rootProject.name = "dispense"
 include ':app', ':dispenseprocessing-annotation'
 include ':dispenseprocessing-compiler'
 include ':dispenseprocessing'
