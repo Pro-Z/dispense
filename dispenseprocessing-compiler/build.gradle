@@ -13,7 +13,7 @@ apply from: "${rootProject.projectDir}/installv1.gradle"
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':dispenseprocessing-annotation')
+    api project(':dispenseprocessing-annotation')
 }
 
 java {
